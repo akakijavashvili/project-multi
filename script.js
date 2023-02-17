@@ -47,7 +47,7 @@ function chekstep1(){
     }
 
 
-    if(Name.value.match(/[a-z]/) ||  Name.value.length > 6 && email.value.match(/[@]/) && email.value.length > 9 && phone.value.length > 6 || phone.value.match(/[0-9]/)){
+    if(Name.value.match(/[a-z]/) &&  Name.value.length > 6 && email.value.match(/[@]/) && email.value.length > 9 && phone.value.length > 6 && phone.value.match(/[0-9]/)){
         console.log('nice job');
         step1[0].style.display='none';
         step2[0].style.display='flex';
